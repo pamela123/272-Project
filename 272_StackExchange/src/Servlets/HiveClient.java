@@ -32,9 +32,10 @@ public class HiveClient {
 		String sql = "Select CreationYear,count(*) as Total from programmer where postTypeId=2 group by CreationYear";
 		System.out.println("Running: " + sql);
 		res = stmt.executeQuery(sql);
+		System.out.println();
 		while (res.next()){
-			System.out.println(String.valueOf(res.getInt(1)));
-			System.out.println(String.valueOf(res.getInt(2)));
+			System.out.print(String.valueOf(res.getInt(1)));
+			System.out.println(", "+String.valueOf(res.getInt(2)));
 		}
 		// regular hive query
 		/*sql = "select count(1) from " + tableName;
