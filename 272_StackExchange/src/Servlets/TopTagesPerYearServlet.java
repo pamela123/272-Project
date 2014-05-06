@@ -36,13 +36,22 @@ public class TopTagesPerYearServlet extends HttpServlet {
 		try
 		{
 			t= request.getParameter("t");
-			System.out.println("tablename"+t);
 			y=Integer.parseInt(request.getParameter("y"));
+			session.setAttribute("tableName", t);
+			session.setAttribute("year", y);
+			String sessionVar = t + "_topTagesPerYear";
+			sessionVar = sessionVar+ "_" + y;
+			if(session.getAttribute(sessionVar)==null){
+				topTagesPerYear1=topTagesPerYear.TopTagesPerYear(t,y);
+				session.setAttribute(sessionVar, topTagesPerYear1);
+			}
+			
+			
 			System.out.println("year"+y);
-			if(null==session.getAttribute("topTagesPerYear")){
+			/*if(null==session.getAttribute("topTagesPerYear")){
 				topTagesPerYear1=topTagesPerYear.TopTagesPerYear(t,y);
 				session.setAttribute("topTagesPerYear", topTagesPerYear1);
-			}
+			}*/
 			
 			RequestDispatcher view = request.getRequestDispatcher("/View/TopTagesPerYear.jsp");
 			view.forward(request, response);

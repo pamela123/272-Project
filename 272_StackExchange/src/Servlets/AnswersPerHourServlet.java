@@ -42,9 +42,11 @@ public class AnswersPerHourServlet extends HttpServlet {
 		{
 			t= request.getParameter("t");
 			System.out.println("tablename"+t);
-			if(session.getAttribute("totalAnsPerHour")==null){
+			session.setAttribute("tableName", t);
+			String sessionVar = t + "_totalAnsPerHour";
+			if(session.getAttribute(sessionVar)==null){
 				totalAnsPerHour=ansPerHour.TotalNoOfAnswersHour(t);
-				session.setAttribute("totalAnsPerHour", totalAnsPerHour);
+				session.setAttribute(sessionVar, totalAnsPerHour);
 			}
 			
 			//request.setAttribute("result", result);

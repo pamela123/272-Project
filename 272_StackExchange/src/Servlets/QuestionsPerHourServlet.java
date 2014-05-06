@@ -37,19 +37,23 @@ public class QuestionsPerHourServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		int result=0;	
 		HttpSession session = request.getSession();
-		System.out.println("inside dopost");
 		DataBean[] totalQuesPerHour;
 		String t;
 		try
 		{
 			t= request.getParameter("t");
-			System.out.println("tablename"+t);
-			if(session.getAttribute("totalQuesPerHour")==null){
+			session.setAttribute("tableName", t);
+			String sessionVar = t + "_totalQuesPerHour";
+			if(session.getAttribute(sessionVar)==null){
+				totalQuesPerHour=quesPerHour.TotalNoOfQuestionsHour(t);
+				session.setAttribute(sessionVar, totalQuesPerHour);
+			}
+			/*if(session.getAttribute("totalQuesPerHour")==null){
 				totalQuesPerHour=quesPerHour.TotalNoOfQuestionsHour(t);
 				session.setAttribute("totalQuesPerHour", totalQuesPerHour);
-			}
+			}*/
 			
-			System.out.println("returned result="+result);
+			//System.out.println("returned result="+result);
 			//request.setAttribute("result", result);
 			
 			RequestDispatcher view = request.getRequestDispatcher("/View/QuestionsPerHour.jsp");

@@ -40,11 +40,16 @@ public class QuesInTopTags extends HttpServlet {
 		try
 		{
 			t= request.getParameter("t");
-			System.out.println("tablename"+t);
-			/*if(session.getAttribute("quesInTopTags")==null){*/
+			session.setAttribute("tableName", t);
+			String sessionVar = t + "_quesInTopTags";
+			if(session.getAttribute(sessionVar)==null){
+				quesInTopTags=quesTags.QuesInTopTags(t);
+				session.setAttribute(sessionVar, quesInTopTags);
+			}
+			/*if(session.getAttribute("quesInTopTags")==null){
 				quesInTopTags=quesTags.QuesInTopTags(t);
 				session.setAttribute("quesInTopTags", quesInTopTags);
-			//}
+			}*/
 			
 			//request.setAttribute("result", result);
 			

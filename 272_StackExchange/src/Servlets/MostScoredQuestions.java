@@ -31,17 +31,23 @@ public class MostScoredQuestions extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		System.out.println("inside dopost");
-		DataBean[] mostScoredQuestions1 = new DataBean[7];
+		DataBean[] mostScoredQuestions1 = new DataBean[10];
 		HttpSession session = request.getSession();
 		String t;
 		try
 		{
 			t= request.getParameter("t");
-			System.out.println("tablename"+t);
-			if(null==session.getAttribute("mostScoredQuestions")){
+			session.setAttribute("tableName", t);
+			String sessionVar = t + "_mostScoredQuestions";
+			if(session.getAttribute(sessionVar)==null){
+				mostScoredQuestions1=mostScoredQuestions.MostScoredQuestions(t);
+				session.setAttribute(sessionVar, mostScoredQuestions1);
+			}
+			
+			/*if(null==session.getAttribute("mostScoredQuestions")){
 			mostScoredQuestions1=mostScoredQuestions.MostScoredQuestions(t);
 			session.setAttribute("mostScoredQuestions", mostScoredQuestions1);
-			}
+			}*/
 			RequestDispatcher view = request.getRequestDispatcher("/View/MostScoredQuestions.jsp");
 			view.forward(request, response);
 		}

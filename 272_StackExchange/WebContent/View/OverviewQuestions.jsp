@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Sign-Up</title>
+<title>Overview</title>
 
 <link href="css/basic.css" type="text/css" rel="stylesheet" />
 	<script type="text/javascript" src="js/enhance.js"></script>	

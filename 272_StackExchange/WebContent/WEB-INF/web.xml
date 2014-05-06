@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
-  <display-name>272_StackExchange</display-name>
-  <welcome-file-list>
+  <display-name>272_StatckExchange</display-name>
+   <welcome-file-list>
     <welcome-file>/View/Home.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
@@ -13,15 +13,95 @@
   <servlet-mapping>
     <servlet-name>TotalNoOfAnswersServlet</servlet-name>
     <url-pattern>/View/TotalNoOfAnswersServlet</url-pattern>
+  </servlet-mapping> 
+   <servlet>
+    <description></description>
+    <display-name>TotalNoOfQuestionsServlet</display-name>
+    <servlet-name>TotalNoOfQuestionsServlet</servlet-name>
+    <servlet-class>Servlets.TotalNoOfQuestionsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TotalNoOfQuestionsServlet</servlet-name>
+    <url-pattern>/View/TotalNoOfQuestionsServlet</url-pattern>
+  </servlet-mapping> 
+  <servlet>
+    <description></description>
+    <display-name>QuestionsPerHourServlet</display-name>
+    <servlet-name>QuestionsPerHourServlet</servlet-name>
+    <servlet-class>Servlets.QuestionsPerHourServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>QuestionsPerHourServlet</servlet-name>
+    <url-pattern>/View/QuestionsPerHourServlet</url-pattern>
   </servlet-mapping>
   <servlet>
     <description></description>
-    <display-name>ProgrammerOverview</display-name>
-    <servlet-name>ProgrammerOverview</servlet-name>
-    <servlet-class>Servlets.ProgrammerOverview</servlet-class>
+    <display-name>AnswersPerHourServlet</display-name>
+    <servlet-name>AnswersPerHourServlet</servlet-name>
+    <servlet-class>Servlets.AnswersPerHourServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>ProgrammerOverview</servlet-name>
-    <url-pattern>/View/ProgrammerOverview</url-pattern>
+    <servlet-name>AnswersPerHourServlet</servlet-name>
+    <url-pattern>/View/AnswersPerHourServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>QuesInTopTags</display-name>
+    <servlet-name>QuesInTopTags</servlet-name>
+    <servlet-class>Servlets.QuesInTopTags</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>QuesInTopTags</servlet-name>
+    <url-pattern>/View/QuesInTopTags</url-pattern>
+  </servlet-mapping> 
+  <servlet>
+    <description></description>
+    <display-name>CategoryOverview</display-name>
+    <servlet-name>CategoryOverview</servlet-name>
+    <servlet-class>Servlets.CategoryOverview</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CategoryOverview</servlet-name>
+    <url-pattern>/View/CategoryOverview</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>MostScoredQuestions</display-name>
+    <servlet-name>MostScoredQuestions</servlet-name>
+    <servlet-class>Servlets.MostScoredQuestions</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MostScoredQuestions</servlet-name>
+    <url-pattern>/View/MostScoredQuestions</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FavouriteQuestions</display-name>
+    <servlet-name>FavouriteQuestions</servlet-name>
+    <servlet-class>Servlets.FavouriteQuestions</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FavouriteQuestions</servlet-name>
+    <url-pattern>/View/FavouriteQuestions</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>OverviewQuestions</display-name>
+    <servlet-name>OverviewQuestions</servlet-name>
+    <servlet-class>Servlets.OverviewQuestions</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OverviewQuestions</servlet-name>
+    <url-pattern>/View/OverviewQuestions</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TopTagesPerYearServlet</display-name>
+    <servlet-name>TopTagesPerYearServlet</servlet-name>
+    <servlet-class>Servlets.TopTagesPerYearServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TopTagesPerYearServlet</servlet-name>
+    <url-pattern>/View/TopTagesPerYearServlet</url-pattern>
+  </servlet-mapping>  
 </web-app>

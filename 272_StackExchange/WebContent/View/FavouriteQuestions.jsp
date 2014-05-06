@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Most Scored Questions</title>
+<title>Favorite Questions</title>
 
 <link href="css/basic.css" type="text/css" rel="stylesheet" />
 <style>
@@ -44,8 +44,8 @@ padding: 8px;
 <%@include file="Header.jsp" %>
 <body>
 <%String t =(String)session.getAttribute("tableName");%>
-	<%String sessionVar = t + "_mostScoredQuestions";
-DataBean[] mostScoredQuestions = (DataBean[])session.getAttribute(sessionVar);
+	<%String sessionVar = t + "_favouriteQuestions";
+DataBean[] favouriteQuestions = (DataBean[])session.getAttribute(sessionVar);
  %>
 <%
 	
@@ -61,8 +61,8 @@ DataBean[] mostScoredQuestions = (DataBean[])session.getAttribute(sessionVar);
       		<li><a href="TotalNoOfAnswersServlet?t=<%=t%>">Answers</a></li>
       		<li><a href="TotalNoOfQuestionsServlet?t=<%=t%>">Questions</a></li>
 			<li><a href="QuesInTopTags?t=<%=t%>">Tags</a></li>
-			<li><a href="FavouriteQuestions?t=<%=t%>">Favorite questions</a></li>
-			<li>Most scored questions</li>
+			<li>Favorite questions</li>
+			<li><a href="MostScoredQuestions?t=<%=t%>">Most scored questions</a></li>
 							
  	     	</ul>
       </div>
@@ -73,12 +73,12 @@ DataBean[] mostScoredQuestions = (DataBean[])session.getAttribute(sessionVar);
 	
 	
 </tr>
-<%    for (int i=0; i < mostScoredQuestions.length; i++)
+<%    for (int i=0; i < favouriteQuestions.length; i++)
     {      
 %>
 <tr>
-		<td><%=mostScoredQuestions[i].getMostScoredQuestion()%></td>
-		<td><%=mostScoredQuestions[i].getScore()%></td>
+		<td><%=favouriteQuestions[i].getFavouriteQuestion()%></td>
+		<td><%=favouriteQuestions[i].getFavouriteCount()%></td>
 		
 		
 		

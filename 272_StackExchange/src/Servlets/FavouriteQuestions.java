@@ -1,10 +1,6 @@
 package Servlets;
 
-
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.HashMap;
-import java.util.Map;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -13,19 +9,18 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-
 /**
- * Servlet implementation class SignUp
+ * Servlet implementation class FavouriteQuestions
  */
-public class TotalNoOfAnswersServlet extends HttpServlet {
+
+public class FavouriteQuestions extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	
-	 Map<String, String> messages = new HashMap<String, String>();
-	 HiveConnection totalAnswers = new HiveConnection();
+	HiveConnection favouriteQuestions = new HiveConnection();
+       
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public TotalNoOfAnswersServlet() {
+    public FavouriteQuestions() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -35,40 +30,39 @@ public class TotalNoOfAnswersServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		int result=0;	
-		HttpSession session = request.getSession();
 		System.out.println("inside dopost");
-		DataBean[] totalAnswersPerYear = new DataBean[4];
+		DataBean[] favouriteQuestions1 = new DataBean[7];
+		HttpSession session = request.getSession();
 		String t;
 		try
 		{
 			t= request.getParameter("t");
 			session.setAttribute("tableName", t);
-			String sessionVar = t + "_totalAnswersPerYear";
+			String sessionVar = t + "_favouriteQuestions";
 			if(session.getAttribute(sessionVar)==null){
-				totalAnswersPerYear=totalAnswers.TotalNoOfAnswers(t);
-				session.setAttribute(sessionVar, totalAnswersPerYear);
+				favouriteQuestions1=favouriteQuestions.FavouriteQuestions(t);
+				session.setAttribute(sessionVar, favouriteQuestions1);
 			}
-			/*if(session.getAttribute("totalAnswersPerYear")==null){
-				totalAnswersPerYear=totalAnswers.TotalNoOfAnswers(t);
-				session.setAttribute("totalAnswersPerYear", totalAnswersPerYear);
-			}*/			
 			
-			//request.setAttribute("result", result);
-			
-			RequestDispatcher view = request.getRequestDispatcher("/View/TotalNoOfAnswers.jsp");
+			/*if(null==session.getAttribute("favouriteQuestions")){
+				favouriteQuestions1=favouriteQuestions.FavouriteQuestions(t);
+				session.setAttribute("favouriteQuestions", favouriteQuestions1);
+			}*/
+			RequestDispatcher view = request.getRequestDispatcher("/View/FavouriteQuestions.jsp");
 			view.forward(request, response);
 		}
 		catch(Exception e){
 			
 		}
 	
-		
 	}
+
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+		// TODO Auto-generated method stub
 	}
+
+
 }

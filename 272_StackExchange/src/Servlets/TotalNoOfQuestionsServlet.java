@@ -37,17 +37,22 @@ public class TotalNoOfQuestionsServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		int result=0;	
 		HttpSession session = request.getSession();
-		System.out.println("inside dopost");
-		DataBean[] totalQuestionsPerYear = new DataBean[7];
+		
+		DataBean[] totalQuestionsPerYear = new DataBean[4];
 		String t;
 		try
 		{
 			t= request.getParameter("t");
-			System.out.println("tablename"+t);
-			if(session.getAttribute("totalQuestionsPerYear")==null){
+			session.setAttribute("tableName", t);
+			String sessionVar = t + "_totalQuestionsPerYear";
+			if(session.getAttribute(sessionVar)==null){
+				totalQuestionsPerYear=totalQuestions.TotalNoOfQuestions(t);
+				session.setAttribute(sessionVar, totalQuestionsPerYear);
+			}
+			/*if(session.getAttribute("totalQuestionsPerYear")==null){
 				totalQuestionsPerYear=totalQuestions.TotalNoOfQuestions(t);
 				session.setAttribute("totalQuestionsPerYear", totalQuestionsPerYear);
-			}
+			}*/
 			
 			System.out.println("returned result="+result);
 			//request.setAttribute("result", result);

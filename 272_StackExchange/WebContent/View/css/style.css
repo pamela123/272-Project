@@ -7,17 +7,21 @@ main, article, aside, canvas, figure, figure img, figcaption, hgroup, footer, he
 #container {
 	width: 100%;
 	position: relative;
-	margin: auto;
+	margin: auto; height:100%;
 }
 nav {
 	margin: auto;
 	float: right;
-	width: 90%;
+	width: 100%;
 }
+
+
 main {
 	margin: auto;
 	width: 1000px;
 }
+
+
 .abox {
 	float: left;
 	width: 300px;
@@ -27,6 +31,8 @@ main {
 
 
 }
+
+
 .abox img {
 	border: medium solid #FFFBF0;
 	-moz-border-radius:19px;
@@ -37,6 +43,9 @@ main {
 	box-shadow:0px 0px 11px #000000;
 
 }
+
+
+
 .content .abox figure a:hover {
 	-moz-border-radius:19px;
 -webkit-border-radius:19px;
@@ -48,6 +57,8 @@ box-shadow:0px 0px 11px #000000;
 	-moz-transition: all 400ms linear 0s;
 	
 }
+
+
 #nav_social {
 	float: right;
 	width: 140px;
@@ -65,8 +76,8 @@ box-shadow:0px 0px 11px #000000;
 	position: relative;
 	float: left;
 	text-align: center;
-	padding-left: 40px;
-	padding-top: 20px;
+	padding-left: 10px;
+	padding-top: 120px;
 }
 .section_slogan {
 	height: 40px;
@@ -294,12 +305,17 @@ details {
 	font-size: 14px;
 	font-weight: bold;
 }
+
 .enter {
-	width: 960px;
-	position: relative;
-	margin-top: 10px;
+	
+width: 960px;
+	
+position: relative;
+
+margin-top: 60px;
 	margin-right: auto;
-	margin-bottom: auto;
+
+margin-bottom: auto;
 	margin-left: auto;
 	background-color: #F0F0F0;
 	-moz-border-radius:6px;
@@ -309,7 +325,7 @@ details {
 	-webkit-box-shadow:0px 0px 2px #000000;
 	box-shadow:0px 0px 2px #000000;
 	padding-right: 10px;
-	height: 242px;
+	height: 402px;
 
 
 }
@@ -394,6 +410,28 @@ details {
 	color: #444444;
 	margin-left: 10px;
 	text-shadow: -1px 1px 0 #fff;
+}
+.enter table tr td {
+	
+	
+	line-height: 25px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #444444;
+	text-shadow: -1px 1px 0 #fff;
+}
+.enter ul li{
+	list-style-type: none;
+	padding:5px 0;
+	
+}
+.enter ul li a{
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #444444;
+	text-shadow: -1px 1px 0 #fff;
+	font-weight: bold;
+	
 }
 .btn, input[type="submit"], button {
 	background: none repeat scroll 0 0%, -moz-linear-gradient(#CCCCCC, #B3B3B3) repeat scroll 0 0 transparent;
