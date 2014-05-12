@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<!-- saved from url=(0051)http://freehtml5templates.com/downloads/free/todo/# -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Todo</title>
+  <head>
+    <title>Tech Trends</title>
  <style type="text/css">
 <!--
 body {
@@ -10,174 +9,145 @@ body {
 }
 -->
  </style>
- <link href="./Todo_files/style.css" rel="stylesheet" type="text/css">
- <link rel="stylesheet" type="text/css" href="./Todo_files/style9.css">
-    <link rel="stylesheet" type="text/css" href="./Todo_files/demo.css">    
-        <link href="./Todo_files/css" rel="stylesheet" type="text/css">
-        <style type="text/css">
-<!--
-.Stile1 {color: #333333}
--->
-        </style>
- <style type="text/css"></style></head>
+ <link href="css/style_home.css" rel="stylesheet" type="text/css" />
+ <link rel="stylesheet" type="text/css" href="css/style9_home.css" />
+ <link rel="stylesheet" type="text/css" href="css/demo_home.css" />    
+ <link href='http://fonts.googleapis.com/css?family=Terminal+Dosis' rel='stylesheet'type='text/css' />
+        
+ </head>
   
 <body>
+<!--facebook share button -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!--tweet button-->
+<script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
 <!--start container -->
 <div id="container">
 <header>
     <nav>   
-      <div id="logo"><a href="./Todo_files/Todo.htm"><img src="./Todo_files/logo.png" alt="Logo here"></a>      </div>
+      <div id="logo"><a href="#"><img style="height:100px;width:100%;" src="images/title.png" alt="Logo here" /></a>
+      </div>
       
-      <div id="search-top">
-   <form method="post" action="./Todo_files/Todo.htm">
-  <input type="text" onfocus="if(this.value==&#39;Search&#39;)this.value=&#39;&#39;;" onblur="if(this.value==&#39;&#39;)this.value=&#39;Search&#39;;" value="Search" id="search-field">
-  <input type="submit" value="" id="search-btn">
-  </form> 
-      </div>  
-      <div id="nav_social"><a href="./Todo_files/Todo.htm"><img src="./Todo_files/facebook_32.png" alt="Become a fan" width="32" height="32"></a><a href="./Todo_files/Todo.htm"><img src="./Todo_files/twitter_32.png" alt="Follows on Twitter"></a><a href="./Todo_files/Todo.htm"><img src="./Todo_files/linkedin_32.png" alt="Linked in"></a><a href="./Todo_files/Todo.htm"><img src="./Todo_files/email_32.png" alt="Contact" width="32" height="32"></a> </div>
+<div id="nav_social">
+<!--<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/"  data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div>-->
+
+<a href="https://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a>
+
+</div>
+<!--<a href="#"><img src="images/facebook_32.png" alt="Become a fan" width="32" height="32" /></a><a href="#"><img src="images/twitter_32.png" alt="Follows on Twitter" /></a><a href="#"><img src="images/linkedin_32.png" alt="Linked in" /></a><a href="#"><img src="images/email_32.png" alt="Contact" width="32" height="32" /></a>-->  </div>
   </nav>
   
     </header>
-
+<br/><br/>
 <div class="content">
 
           <ul class="ca-menu">
                     <li>
-                        <a href="./Todo_files/Todo.htm">
-                            <span class="ca-icon">A</span>
-                            <div class="ca-content">
-                                <h2 class="ca-main">Exceptional Service</h2>
-                                <h3 class="ca-sub">Personalized to your needs</h3>
-                            </div>
+                        <a href="#">
+                            <span class="ca-icon">Programmers</span>
+
+
+<h3 class="ca-sub" align="center">
+
+ </h3>                           
+                        </a> 
+
+                 </li>
+                    <li>
+                        <a href="#">
+                            <span class="ca-icon">DBAs</span>
+                            
+                                <h3 class="ca-sub">
+
+</h3>
+                            
                         </a>                    </li>
                     <li>
-                        <a href="./Todo_files/Todo.htm">
-                            <span class="ca-icon">I</span>
-                            <div class="ca-content">
-                                <h2 class="ca-main">Creative Storytelling</h2>
-                                <h3 class="ca-sub">Advanced use of technology</h3>
-                            </div>
+                        <a href="#">
+                            <span class="ca-icon">Stack Exchange</span>
+                            
+                                
+                                <h3 class="ca-sub">  </h3>
+                            
                         </a>                    </li>
                     <li>
-                        <a href="./Todo_files/Todo.htm">
-                            <span class="ca-icon">C</span>
-                            <div class="ca-content">
-                                <h2 class="ca-main">Infographical Education</h2>
-                                <h3 class="ca-sub">Understanding visually</h3>
-                            </div>
+                        <a href="#">
+                            <span class="ca-icon">Web</span>
+                            
+                                
+                                <h3 class="ca-sub"> </h3>
+                            
                         </a>                    </li>
-                    <li>
-                        <a href="./Todo_files/Todo.htm">
-                            <span class="ca-icon">S</span>
-                            <div class="ca-content">
-                                <h2 class="ca-main">Sophisticated Team</h2>
-                                <h3 class="ca-sub">Professionals in action</h3>
-                            </div>
+ <li>
+                        <a href="#">
+                            <span class="ca-icon">Android</span>
+                            
+                               
+                                <h3 class="ca-sub">
+  
+</h3>
+                            
                         </a>                    </li>
+
                 </ul>
   <!--star main --> 
-    
-    <main>    
+
+     <br/><br/>
+    <main style="padding-top:20px";>  
+<div class="section_slogan"><img src="images/quote-left.png" alt="images" /><span class="cursive"> Track your skill statistics with help of graphs!! </span><img src="images/quote-right.png" alt="images" /></div>  
       <div class="abox">
       <figure>
       <fcapion>
-     <h1>Communication Graphic... </h1>
-      <a href="./Todo_files/Todo.htm"></a><a href="./Todo_files/Todo.htm"><img src="./Todo_files/bror.jpg" alt="I love graphic" width="289" height="175"></a></fcapion></figure>
+     <h1></h1>
+      </fcaption><a href="#"></a><a href="#"><img src="images/graph1.jpg" alt="I love graphic" width="289" height="175" /></a></figure>
       </div>
     <div class="abox">
       <figure>
       <fcapion>
-      <h1>From the heart Ideas... </h1>
-      
-      <a href="./Todo_files/Todo.htm"><img src="./Todo_files/nat.jpg" alt="I love graphic" width="287" height="176"></a>      </fcapion></figure>
+      <h1></h1>
+      </fcaption>
+      <a href="#"><img src="images/graph2.jpg" alt="I love graphic" width="287" height="176" /></a>      </figure>
     </div>
     <div class="abox">
       <figure>
       <fcapion>
-     <h1>Fluid from the thought...</h1>
-      <a href="./Todo_files/Todo.htm"></a><a href="./Todo_files/Todo.htm"><img src="./Todo_files/nas.jpg" alt="I love graphic" width="289" height="178"></a></fcapion></figure>
+     <h1></h1>
+      </fcaption><a href="#"></a><a href="#"><img src="images/graph3.jpg" alt="I love graphic" width="289" height="178" /></a></figure>
       </div>   
     </main>
     <!--end main -->
     <!--start middle -->
     <middle>    
-      <div class="enter"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non diam in neque blandit commodo. Quisque lobortis sollicitudin nisl pulvinar condimentum. Sed est diam, hendrerit id dignissim vel, adipiscing interdum elit. Vivamus a laoreet eros. Pellentesque sollicitudin pretium fermentum.<br></p>
+      <div class="enter">
+<P align="left"></P>
         <div class="imgteaser">
-<a href="./Todo_files/Todo.htm"><img src="./Todo_files/p1.png" alt="Todo el Todo" width="413" height="220"><span class="desc">
+<a href="#"><span class="desc">
 	<strong>TODO 2011 - Lorem Ipsum quntum</strong>
-		Blandit turpis patria euismod at iaceo appellatio, demoveo esse.</span></a></div><div class="btn"> <a href="./Todo_files/Todo.htm">Read More...</a></div>
+		Blandit turpis patria euismod at iaceo appellatio, demoveo esse.</span></a></div>
       </div>	
-      <div class="section_slogan"><img src="./Todo_files/quote-right.png" alt="images"><span class="cursive"> The inspiration is the desire by extension, do you think is right? </span><img src="./Todo_files/quote-left.png" alt="images"></div>
-      <div class="middle_box"><h1><img src="./Todo_files/fav.png" width="16" height="16"> <a href="./Todo_files/Todo.htm">Resources</a></h1>
-      <ol>
-        <img src="./Todo_files/dialog-ok.png" width="16" height="16"> Lorem Ipsum quntum</ol>
-      <ol>
-        <img src="./Todo_files/dialog-ok.png" width="16" height="16"> Lorem ipsum dolor sit amet</ol>
-      <ol>
-        <img src="./Todo_files/dialog-ok.png" width="16" height="16"> Integer vehicula laoreet purus ac tincidunt</ol>
-     <ol> <img src="./Todo_files/dialog-ok.png" width="16" height="16"> distinctly portfolio suite grande architectural five-star.</ol>
-      </div>
-      <div class="middle_box"><h1><img src="./Todo_files/fav.png" width="16" height="16"> <a href="./Todo_files/Todo.htm">Blogs</a></h1>
-        <p><img src="./Todo_files/dialog-ok.png" width="16" height="16"> Recent Post</p>
-        <ol>
-        <img src="./Todo_files/dialog-ok.png" width="16" height="16"> Lorem Ipsum quntum
-        </ol>
-      <ol>
-        <img src="./Todo_files/dialog-ok.png" width="16" height="16"> Lorem ipsum dolor sit amet
-      </ol>
-      <ol> <img src="./Todo_files/dialog-ok.png" width="16" height="16"> distinctly portfolio suite grande architectural five-star.</ol>
-      </div>
-      <div class="middle_box">
-        <h1><img src="./Todo_files/fav.png" width="16" height="16"> <a href="./Todo_files/Todo.htm">Design </a></h1>
-        <img src="./Todo_files/dialog-ok.png" width="16" height="16"> Lorem Ipsum quntum
-      <ol>
-        <img src="./Todo_files/dialog-ok.png" width="16" height="16"> Lorem ipsum dolor sit amet</ol>
-      <ol>
-        <img src="./Todo_files/dialog-ok.png" width="16" height="16"> Integer vehicula laoreet purus ac tincidunt</ol>
-     <ol> <img src="./Todo_files/dialog-ok.png" width="16" height="16"> distinctly portfolio suite grande architectural five-star.</ol>
-      </div>
+     
+   
     </middle>
 </div>
 <!--end middle -->
 <!--start footer -->
 <footer>  
   <div id="footer">
-  <div id="footerleft">
-      <h2>Imediacreatives</h2>
-      <ul>
-        <li><a href="http://www.imediacreatives.it/">Css3 Kitesurf</a></li>
-        <li><a href="http://freehtml5templates.com/downloads/free/todo/..."> Layout Design Gardenfolio</a></li>
-        <li><a href="http://freehtml5templates.com/downloads/free/todo/..."> BlueBand</a></li>
-      </ul>
-    </div>
-    <div id="footermiddle">
-      <h2>User Comments</h2>
-      <ul>
-        <li><a href="http://freehtml5templates.com/downloads/free/todo/...">SWF XLM Sldeshow</a></li>
-        <li><a href="http://www.imediacreatives.it/">Michelangelo</a></li>
-        <li><a href="http://freehtml5templates.com/downloads/free/todo/...">Another Templates Principato</a></li>
-      </ul>
-    </div>
-    <div id="footerright">
-      <h2>Design &amp; Project</h2>
-      <ul>
-        <li><a href="http://www.imediacreatives.it/">CSS3 Design</a></li>
-        <li><a href="http://www.imediacreatives.it/">Psd to CSS </a></li>
-        <li><a href="http://www.imediacreatives.it/">Psd to Html5</a></li>
-      </ul>
-    </div>
-    <details>
-<summary>
-<p><a href="http://www.imediacreatives.it/" target="_blank">Imediacreatives.it</a>
-  Copyright © yoursite.com -2011.</p></summary><p></p>
-</details>
-    </div>
+ 
 </footer>
 <!--end footer -->
 </div>
 <!--end container -->
 <!-- Free template distributed by http://freehtml5templates.com -->
-  
-<script type="text/javascript" src="./Todo_files/jquery.min.js"></script>
-
-</body></html>
+  </body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+</html>
